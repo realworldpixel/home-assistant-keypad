@@ -140,6 +140,8 @@ worked fine.
 
 **Do this in exactly this order.**
 
+There is a keyswitch "underneath" the ESP32 chip, so you must add the keyswitch before the ESP32.
+
 #### 1. Solder all the SMD components on the PCB
 
 All the SMD parts go on the front side of the board, the switches go on the back later. The photos
