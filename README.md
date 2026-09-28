@@ -147,6 +147,10 @@ There is a keyswitch "underneath" the ESP32 chip, so you must add the keyswitch 
 All the SMD parts go on the front side of the board, the switches go on the back later. The photos
 below show where each part sits.
 
+R1 (330 Ω) and U1 (74AHCT1G125GW), both in the top left corner:
+
+![Resistor and level shifter placement](docs/images/pcb-other.png)
+
 9 × SK6812MINI-E LED:
 
 ![LED placement](docs/images/pcb-leds.png)
@@ -162,10 +166,6 @@ every LED after it stay dark.
 10 × 100 nF capacitor:
 
 ![Capacitor placement](docs/images/pcb-caps.png)
-
-R1 (330 Ω) and U1 (74AHCT1G125GW), both in the top left corner:
-
-![Resistor and level shifter placement](docs/images/pcb-other.png)
 
 #### 2. Solder the two pin headers
 
