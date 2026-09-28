@@ -172,6 +172,12 @@ every LED after it stay dark.
 Put the two 7-pin headers into the U2 footprint from the front, pins pointing up, and solder them
 from the back.
 
+To ensure the USB-C port lines up with the case, ensure the 10-pin headers are flush with the board.
+
+It can be helpful to use the XIAO ESP32 that sits on these headers to align the pins while
+solderinb, but **DO NOT SOLDER THE XIAO ESP32 TO THE HEADERS YET** as we need to install the
+keyswitches.
+
 ![Pin headers on the front of the board](docs/images/pcb-header.png)
 
 ![Header joints on the back of the board](docs/images/pcb-header-bottom.png)
