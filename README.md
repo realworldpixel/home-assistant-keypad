@@ -30,6 +30,10 @@ https://keypad.alex-labs.dev
 - 8 mm hollow gasket punch (wall variant only)
 - Flush cutters
 
+Note: in the current revision of the board the level-shifter component is really small, and if you
+are not comfortable with SMD soldering already, you may have issues.  Consider having the board
+populated by your vendor if you're not sure.
+
 ### Order components
 
 The part names link to a search, so you can pick whichever shop you prefer.
