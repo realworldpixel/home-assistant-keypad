@@ -185,6 +185,28 @@ keyswitches.
 **IMPORTANT:** solder the headers to the PCB only. Don't solder the XIAO module onto them yet, it
 goes on in step 4.
 
+#### Stop, check your work.
+
+If you're not comfortable in your soldering, now is a good time to test your board out.
+
+Moving beyond this step and attaching the switches locks the board in place and it can be very hard
+to correct any mistakes after this point.
+
+My XIAO ESP32 module appeared to connect to the pins on the header just being "inserted" into the
+headers and resting on them, and didn't require I finish soldering it to the headers and lock it in
+place, yours may or may not work similarly.  You can test continuity between a pad and the pin it's
+supposed to connect to see if this works for you.
+
+If this is the case for you, you can set the module on the headers, and temporarily skip ahead to
+the steps on how to configure it in esphome and try it manually using the web interface to verify
+the LEDs work.  If you can toggle on the LEDs and they work, this proves almost all the components
+
+If you're stuck - examine the level shifter pins to make sure they are lining up with the pads, it
+is by far the toughest component.  If things still aren't working, you can use the continuity mode
+of a multimeter and make sure all GND pins on the LEDs are connected to each other, as well as 5V.
+You can check this out by viewing the PCB layout in KiCad (or KiCanvas can work if you don't use
+KiCad) and looking for pins labelled GND or VBUS/+5V.
+
 #### 3. Solder the switches
 
 **IMPORTANT:** install all the switches in the top shell first, then put the PCB in the shell and
