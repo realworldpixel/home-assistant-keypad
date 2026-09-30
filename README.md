@@ -30,6 +30,10 @@ https://keypad.alex-labs.dev
 - 8 mm hollow gasket punch (wall variant only)
 - Flush cutters
 
+Note: in the current revision of the board the level-shifter component is really small, and if you
+are not comfortable with SMD soldering already, you may have issues.  Consider having the board
+populated by your vendor if you're not sure.
+
 ### Order components
 
 The part names link to a search, so you can pick whichever shop you prefer.
@@ -136,10 +140,16 @@ worked fine.
 
 **Do this in exactly this order.**
 
+There is a keyswitch "underneath" the ESP32 chip, so you must add the keyswitch before the ESP32.
+
 #### 1. Solder all the SMD components on the PCB
 
 All the SMD parts go on the front side of the board, the switches go on the back later. The photos
 below show where each part sits.
+
+R1 (330 Ω) and U1 (74AHCT1G125GW), both in the top left corner:
+
+![Resistor and level shifter placement](docs/images/pcb-other.png)
 
 9 × SK6812MINI-E LED:
 
@@ -157,14 +167,16 @@ every LED after it stay dark.
 
 ![Capacitor placement](docs/images/pcb-caps.png)
 
-R1 (330 Ω) and U1 (74AHCT1G125GW), both in the top left corner:
-
-![Resistor and level shifter placement](docs/images/pcb-other.png)
-
 #### 2. Solder the two pin headers
 
 Put the two 7-pin headers into the U2 footprint from the front, pins pointing up, and solder them
 from the back.
+
+To ensure the USB-C port lines up with the case, ensure the 10-pin headers are flush with the board.
+
+It can be helpful to use the XIAO ESP32 that sits on these headers to align the pins while
+solderinb, but **DO NOT SOLDER THE XIAO ESP32 TO THE HEADERS YET** as we need to install the
+keyswitches.
 
 ![Pin headers on the front of the board](docs/images/pcb-header.png)
 
@@ -172,6 +184,28 @@ from the back.
 
 **IMPORTANT:** solder the headers to the PCB only. Don't solder the XIAO module onto them yet, it
 goes on in step 4.
+
+#### Stop, check your work.
+
+If you're not comfortable in your soldering, now is a good time to test your board out.
+
+Moving beyond this step and attaching the switches locks the board in place and it can be very hard
+to correct any mistakes after this point.
+
+My XIAO ESP32 module appeared to connect to the pins on the header just being "inserted" into the
+headers and resting on them, and didn't require I finish soldering it to the headers and lock it in
+place, yours may or may not work similarly.  You can test continuity between a pad and the pin it's
+supposed to connect to see if this works for you.
+
+If this is the case for you, you can set the module on the headers, and temporarily skip ahead to
+the steps on how to configure it in esphome and try it manually using the web interface to verify
+the LEDs work.  If you can toggle on the LEDs and they work, this proves almost all the components
+
+If you're stuck - examine the level shifter pins to make sure they are lining up with the pads, it
+is by far the toughest component.  If things still aren't working, you can use the continuity mode
+of a multimeter and make sure all GND pins on the LEDs are connected to each other, as well as 5V.
+You can check this out by viewing the PCB layout in KiCad (or KiCanvas can work if you don't use
+KiCad) and looking for pins labelled GND or VBUS/+5V.
 
 #### 3. Solder the switches
 
