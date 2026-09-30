@@ -314,7 +314,8 @@ wifi:
 
 captive_portal:
 
-# ---> everything in esphome.yaml goes here, from this line down <---
+packages:
+  pixel: github://realworldpixel/home-assistant-keypad/esphome.yaml
 ```
 
 You get 18 entities:
