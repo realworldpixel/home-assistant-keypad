@@ -110,6 +110,19 @@ light:
         to: ${led1_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_2
@@ -120,6 +133,19 @@ light:
         to: ${led2_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_3
@@ -130,6 +156,19 @@ light:
         to: ${led3_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_4
@@ -140,6 +179,19 @@ light:
         to: ${led4_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_5
@@ -150,6 +202,19 @@ light:
         to: ${led5_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_6
@@ -160,6 +225,19 @@ light:
         to: ${led6_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_7
@@ -170,6 +248,19 @@ light:
         to: ${led7_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_8
@@ -180,6 +271,19 @@ light:
         to: ${led8_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
   - platform: partition
     id: led_9
@@ -190,6 +294,19 @@ light:
         to: ${led9_index}
     restore_mode: RESTORE_DEFAULT_OFF
     default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s    # Time taken to fade in / fade out
+          update_interval: 2s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s    # Time taken to fade in / fade out
+          update_interval: 1s      # Total duration of one pulse cycle
+          min_brightness: 10%
+          max_brightness: 100%
 
 # -----------------------------------------------------------------------------
 #  Buttons
