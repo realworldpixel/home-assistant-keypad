@@ -40,7 +40,7 @@ The part names link to a search, so you can pick whichever shop you prefer.
 | [Low profile keycaps](https://www.google.com/search?q=Gateron+KS-33+low+profile+keycaps) | 9 |
 | [Seeed Studio XIAO ESP32C6](https://www.google.com/search?q=Seeed+Studio+XIAO+ESP32C6) | 1 |
 | [SK6812MINI-E RGB LED, 3 mA](https://www.google.com/search?q=SK6812MINI-E+RGB+LED+3mA) | 9 |
-| [74AHCT1G125GW,125 level shifter](https://www.google.com/search?q=74AHCT1G125GW%2C125) | 1 |
+| [SN74AHCT1G125DBVR level shifter, SOT-23-5](https://www.google.com/search?q=SN74AHCT1G125DBVR) | 1 |
 | [Ceramic capacitor 100 nF 50 V, 0805](https://www.google.com/search?q=ceramic+capacitor+100nF+50V+0805) | 10 |
 | [Resistor 330 Ω, 0805](https://www.google.com/search?q=resistor+330+ohm+0805+SMD) | 1 |
 | [M2 × 3 × 3 mm heat-set threaded inserts](https://www.google.com/search?q=M2+3x3mm+heat+set+threaded+insert) | 4 |
@@ -157,7 +157,7 @@ every LED after it stay dark.
 
 ![Capacitor placement](docs/images/pcb-caps.png)
 
-R1 (330 Ω) and U1 (74AHCT1G125GW), both in the top left corner:
+R1 (330 Ω) and U1 (SN74AHCT1G125DBVR), both in the top left corner:
 
 ![Resistor and level shifter placement](docs/images/pcb-other.png)
 
